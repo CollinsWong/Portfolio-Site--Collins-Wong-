@@ -1,0 +1,74 @@
+/*
+Colors used:
+Primary Color (Blue): #0095ff;
+Secondary Color (Purple): #5A2AEA
+*/
+body {
+    font-family:'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5; /* 1.5 times the font size */
+    font-style: bold;
+}
+
+h2{
+  color: #0095ff;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+}
+
+
+  a:hover {
+    color: #cc6540;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:visited { /* visited link */
+    color: #5A2AEA;
+  }
+  a:active { /* selected link */
+    color: #994c30;
+  }
+
+a:focus {
+  color: #025d79;
+  text-decoration: underline;
+}
+
+.button {
+background-color: #0095ff;
+color: white;
+font-size: 16px;
+padding: 10px 20px
+}
+
+.button:hover {
+    background-color: #cc6540;
+    color: white;
+}
+
+.button:active {
+background-color: #994c30;
+color:white
+}
+
+.button:visited {
+    background-color: #5a2aea;
+    color: white;
+}
+
+.button:focus{
+    background-color: #025d79;
+    color: white;
+    border: 2px solid #cc6540;
+}
+
+img {
+  width: 100%;
+}
