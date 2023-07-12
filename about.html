@@ -13,7 +13,8 @@
 </head>
 <body>
 <header>
-    <div id="Logo">
+    <div>
+    <div id="logo">
         <img src="/img/Patchwork.png" alt="Patchwork Logo" >
         <nav>
             <ul>
@@ -23,27 +24,35 @@
             </ul>
         </nav>
     </div>
+</div>
 </header>
-<div id="Introduction"><!--Section-->
-    <div><!--Container-->
+<div id="introduction"><!--Section-->
+    <div class="container"><!--Container-->
         <h1>About Me</h1>
     </div><!--end of container-->
 </div><!--end of first section-->
-<div><!--Section-->
+<div class="container"><!--Section-->
     <div><!--Container-->
         <picture>
             <img src="/img/ProfilePicture.svg" alt="Profile Picture">
         </picture>
-        <div><!--Row-->
+        <div class="row"><!--Row-->
             <div><!--Column-->
             <h2>My Story</h2>
             <p>Hello, my name is Collins. I am a marketing analyst making a transition into UI design. I have experience in marketing, project management, visual design, and market research. I am passionate in design and love the storytelling aspect of design. Being able to create designs that illustrate a concept or express an emotion is something I really enjoy doing.</p>
            <p>UI design is especially appealing to me because users can interact with the design, and the process expands to functionality. We are not limited to only designing the visual aspect of an interface. We get to design the different features, and how we want users to interact with the different functions, and that makes the design feel alive.</p><p>I am excited to make this transition into the UI field, and I want to continue to improve my design skills and expand my creativity.</p>
-            <a href="/Resume.pdf" class="button" target="_blank">Download Resume</a>
+            <div id="resume">
+            <div class="row">
+           <a href="/Resume.pdf" class="button" target="_blank">Download Resume</a>
             </div>
-            <div><!--Column-->
+            </div>
+            </div>
+            </div>
+            <div class="row"><!--Column-->
+                <div id="skills-tools">
+                    <div class="row">
                 <h2>Skills and Tools</h2>
-                <div id="Skills-Tools"><!--Row-->
+                <div><!--Row-->
                     <div><!--Column-->
                         <h3>Relevant Skills</h3>
                         <ul>
@@ -69,17 +78,20 @@
                         </ul>
                     </div><!--end of tools column-->
             </div>
-        </div>
+         </div>
     </div>
  </div>
 </div><!--End of Section-->
 <footer>
-    <div id="Contact">
+    <div id="contact">
         <h2>Get in Touch</h2>
         <p>Would you like to learn more about my projects? Please do not hesitate to contact me!</p>
         <div>
-            <a href="#EmailMe" class="button">Email Me</a>
-            <div>
+            <div class="row">
+            <footer id="EmailMe"></footer>
+            <a href="#EmailMe" class="button" id="EmailMe">Email Me</a>
+            </div>
+            <div class="row">
                 <nav>
                 <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank"><img src="/img/linkedinsvg.svg" alt="LinkedIn"></a>
                 <a href="https://www.behance.net/collinswong" target="_blank"><img src="/img/behance.svg" alt="Behance"></a>
@@ -92,6 +104,5 @@
         </div>
     </div>
 </footer>
-<footer id="EmailMe"></footer>
 </body>
 </html>
