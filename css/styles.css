@@ -25,6 +25,7 @@ p{
     font-size: 16px;
     line-height: 1.2;
     font-style: normal;
+    margin-bottom: 30px;
 }
 
 
@@ -164,27 +165,19 @@ nav > ul > li > a:hover {
   text-align: center;
 }
 
-#resume .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
-#skills-tools .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#paddedrow .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
-#Project-Intro .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+.social {
+  text-align: center;
+}
 
-#Objectives-Goals .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+}
 
-#Table-of-Contents .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#user-needs .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#competitor-analysis .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#user-personas .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#user-flow .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#major-screens .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#final-screens .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#android-screens .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
+.social svg {
+  width: 50px;
+  height: auto;
+}
