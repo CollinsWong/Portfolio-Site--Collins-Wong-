@@ -15,10 +15,12 @@ h1{
     font-size: 30px;
     line-height: 1.5; /* 1.5 times the font size */
     font-style: bold;
+    text-align: center;
 }
 
 h2{
   color: #0095ff;
+  text-align: center;
 }
 
 p{
@@ -46,16 +48,29 @@ a:focus {
   text-decoration: underline;
 }
 
+a {
+  color: #0095ff;
+  transition: 0.2 opacity;
+}
+
 .button {
+display: inline-block;
 background-color: #0095ff;
 color: white;
+font-weight: 400;
 font-size: 16px;
 padding: 10px 20px;
+text-decoration: none;
+border-radius: 3px;
+border-bottom: 2px solid #5A2AEA;
+transition: 0.2s opacity;
 }
+
 
 .button:hover {
     background-color: #cc6540;
     color: white;
+    opacity: 0.8;
 }
 
 .button:active {
@@ -93,19 +108,33 @@ header {
     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
 }
 
+header a {
+  text-decoration: none;
+}
+
 /* Layout Styling */
+
 .container {
   padding: 0 15px;
 }
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 #my-work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero h1 {
   text-align: center; /* Centers text */
+}
+
+#hero p {
+  text-align: center;
 }
 
 .center {
@@ -159,6 +188,7 @@ nav > ul > li > a:hover {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #introduction h1{
@@ -181,3 +211,170 @@ nav > ul > li > a:hover {
   width: 50px;
   height: auto;
 }
+
+li {
+  padding: 0 0 15px 0;
+}
+
+#copyright {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+#my-work p{
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* Breakpoints */
+
+/* Medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px 20px;
+  }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+    #hero span {
+      display: block;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    [class*="col-"] {
+      float: left;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    p {
+      padding: 0 0 0 10px;
+    }
+   .social {
+    text-align: center;
+    display: inline-block;
+   }
+
+   .button {
+    display: inline-block;
+    text-align: center;
+   }
+}
+
+/* Large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px 20px;
+    font-size: 20px;
+  }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+    #hero span {
+      display: block;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    [class*="col-"] {
+      float: left;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+
+}
+
+/* X-large devices (1440px or larger) */
+@media only screen and (min-width: 1440px) {
+}
+
+/* Extra-large devices (1920px or larger) */
+@media only screen and (min-width: 1920px) {
+}
+
+
+/* Practice Animation Styling */
+
+/* @keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+} 
+/* shortened code from: 
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} */
+
+/* @keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+} */
+
+/* .cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} */
+
+/* @keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+} */
+
+/* .cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+} */ 
+
+/* Animation Styling - Los Angeles */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+} 
