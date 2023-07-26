@@ -417,6 +417,10 @@ nav > ul {
       display: inline-block;
     }
 
+    .navtoggle li:last-child {
+      display: none;
+    }
+
     nav > ul > li {
       display: inline-block;
     }
