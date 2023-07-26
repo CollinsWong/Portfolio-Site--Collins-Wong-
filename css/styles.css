@@ -95,14 +95,13 @@ img {
 
 header {
   background-color: #0095ff;
-  padding: 10px;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
   position: relative;
     /*start ------------*/
     width: [object Object]px; 
     height: [object Object]px; 
-    border: solid #BDBDBD 1px; 
+    border: solid #0095ff 1px; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
@@ -150,17 +149,15 @@ h3 {
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 100px;
+  height: auto;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -243,6 +240,39 @@ height: auto;
   margin: 0 auto;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #fefefe;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 
 /* Breakpoints */
@@ -302,7 +332,33 @@ height: auto;
 .col-md-10 {width: 83.33%;}
 .col-md-11 {width: 91.66%;}
 .col-md-12 {width: 100%;}
+
+.logo {
+  max-width: 80px;
 }
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+.navtoggle li .icon {
+  position: relative;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+}
+
 
 /* Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
@@ -352,6 +408,30 @@ height: auto;
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
+
+    .logo {
+      max-width: 80px;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+    }
+
+    nav > ul {
+      margin: 1em 0;
+    }
+
+    .navtoggle li .icon {
+      position: relative;
+      right: 0;
+      top: 2px;
+      font-size: 20px;
+      padding-right: 0;
+    }
 
 
 }
