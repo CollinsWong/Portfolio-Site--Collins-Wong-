@@ -8,40 +8,42 @@ Secondary Color (Purple): #5A2AEA
 }
 
 body {
-    font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-h1{
-    font-size: 30px;
-    line-height: 1.5; /* 1.5 times the font size */
-    font-style: bold;
-    text-align: center;
-}
-
-h2{
-  color: #0095ff;
+h1 {
+  font-size: 30px;
+  line-height: 1.5; /* 1.5 times the font size */
+  font-style: bold;
   text-align: center;
 }
 
-p{
-    font-size: 16px;
-    line-height: 1.2;
-    font-style: normal;
-    margin-bottom: 30px;
+h2 {
+  color: #0079d0;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: normal;
+  margin-bottom: 30px;
 }
 
 
-  a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
 
-  a:visited { /* visited link */
-    color: #5A2AEA;
-  }
-  a:active { /* selected link */
-    color: #994c30;
-  }
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #5a2aea;
+}
+
+a:active { /* selected link */
+  color: #994c30;
+}
 
 a:focus {
   color: #025d79;
@@ -54,39 +56,38 @@ a {
 }
 
 .button {
-display: inline-block;
-background-color: #0095ff;
-color: white;
-font-weight: 400;
-font-size: 16px;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 3px;
-border-bottom: 2px solid #5A2AEA;
-transition: 0.2s opacity;
+  display: inline-block;
+  background-color: #0079d0;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 3px;
+  border-bottom: 2px solid #5a2aea;
+  transition: 0.2s opacity;
 }
 
-
 .button:hover {
-    background-color: #cc6540;
-    color: white;
-    opacity: 0.8;
+  background-color: #cc6540;
+  color: white;
+  opacity: 0.8;
 }
 
 .button:active {
-background-color: #994c30;
-color:white
+  background-color: #994c30;
+  color: white;
 }
 
 .button:visited {
-    background-color: #5a2aea;
-    color: white;
+  background-color: #5a2aea;
+  color: white;
 }
 
-.button:focus{
-    background-color: #025d79;
-    color: white;
-    border: 2px solid #cc6540;
+.button:focus {
+  background-color: #025d79;
+  color: white;
+  border: 2px solid #cc6540;
 }
 
 img {
@@ -98,17 +99,21 @@ header {
   padding: 10px 0 4px;
   border-bottom: 3px solid #4a4a4a;
   position: relative;
-    /*start ------------*/
-    width: [object Object]px; 
-    height: [object Object]px; 
-    border: solid #0095ff 1px; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
-    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)  ; 
+ /*start------------*/
+  width: [object Object]px;
+  height: [object Object]px;
+  border: solid #0095ff 1px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 header a {
   text-decoration: none;
+}
+
+header a:visited {
+  color: #fffce1;
 }
 
 /* Layout Styling */
@@ -117,7 +122,7 @@ header a {
   padding: 0 15px;
 }
 
-.centered{
+.centered {
   text-align: center;
 }
 
@@ -164,7 +169,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #5A2AEA;
+  color: #2b0d84;
 }
 
 nav > ul > li > a:visited {
@@ -193,12 +198,13 @@ nav > ul > li > a:hover {
   text-align: center;
 }
 
-#introduction h1{
+#introduction h1 {
   text-align: center;
 }
 
-
 #paddedrow .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#skills-tools .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 .social {
   text-align: center;
@@ -224,11 +230,11 @@ li {
 
 img {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-#my-work p{
+#my-work p {
   position: relative;
   padding: 20px;
   text-align: center;
@@ -256,20 +262,20 @@ height: auto;
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #fefefe;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -283,39 +289,45 @@ height: auto;
     text-align: unset;
     padding: 20px 0 13px 20px;
   }
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
     }
+
     #hero span {
       display: block;
     }
+
     .col-md-6 {
       width: 50%;
     }
-    [class*="col-"] {
-      float: left;
-    }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
 
-    p {
-      padding: 0 0 0 10px;
-    }
-   .social {
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  p {
+    padding: 0 0 0 10px;
+  }
+
+  .social {
     text-align: center;
     display: inline-block;
-   }
+  }
 
-   .button {
+  .button {
     display: inline-block;
     text-align: center;
-   }
-   .profile-picture {
+  }
+
+  .profile-picture {
     max-width: 400px;
     display: block;
     margin: 0 auto;
@@ -333,30 +345,29 @@ height: auto;
 .col-md-11 {width: 91.66%;}
 .col-md-12 {width: 100%;}
 
-.logo {
-  max-width: 80px;
+  .logo {
+    max-width: 80px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
+  nav > ul {
+    margin: 1em 0;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-nav > ul {
-  margin: 1em 0;
-}
-
-.navtoggle li .icon {
-  position: relative;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
+  .navtoggle li .icon {
+    position: relative;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
 }
 
 
@@ -367,35 +378,42 @@ nav > ul {
     margin-left: auto;
     margin-right: auto;
   }
+
   header {
     text-align: unset;
     padding: 20px 0 13px 20px;
     font-size: 20px;
   }
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-    #hero span {
-      display: block;
-    }
-    .col-md-6 {
-      width: 50%;
-    }
-    [class*="col-"] {
-      float: left;
-    }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    .profile-picture {
-      max-width: 500px;
-      display: block;
-      margin: 0 auto;
-    }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .profile-picture {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
@@ -409,34 +427,33 @@ nav > ul {
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
 
-    .logo {
-      max-width: 80px;
-    }
+  .logo {
+    max-width: 80px;
+  }
 
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-    .navtoggle li:last-child {
-      display: none;
-    }
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-    nav > ul > li {
-      display: inline-block;
-    }
+  nav > ul > li {
+    display: inline-block;
+  }
 
-    nav > ul {
-      margin: 1em 0;
-    }
+  nav > ul {
+    margin: 1em 0;
+  }
 
-    .navtoggle li .icon {
-      position: relative;
-      right: 0;
-      top: 2px;
-      font-size: 20px;
-      padding-right: 0;
-    }
-
+  .navtoggle li .icon {
+    position: relative;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
 }
 
 /* X-large devices (1440px or larger) */
@@ -505,3 +522,4 @@ nav > ul {
 .sun {
   animation: 4s color-change infinite alternate linear;
 } 
+
