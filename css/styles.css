@@ -14,7 +14,7 @@ body {
 h1 {
   font-size: 30px;
   line-height: 1.5; /* 1.5 times the font size */
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -52,7 +52,7 @@ a:focus {
 
 a {
   color: #0095ff;
-  transition: 0.2 opacity;
+  transition: all .2s;
 }
 
 .button {
@@ -100,8 +100,6 @@ header {
   border-bottom: 3px solid #4a4a4a;
   position: relative;
  /*start------------*/
-  width: [object Object]px;
-  height: [object Object]px;
   border: solid #0095ff 1px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -128,11 +126,12 @@ header a:visited {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #my-work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
@@ -368,6 +367,14 @@ img {
     font-size: 20px;
     padding-right: 0;
   }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
+  }
 }
 
 
@@ -453,6 +460,14 @@ img {
     top: 2px;
     font-size: 20px;
     padding-right: 0;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
   }
 }
 
